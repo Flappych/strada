@@ -1,24 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     padding: 0;
     margin: 0;
+    color: white;
 }
 
+/* Header */
+
 header {
-    background-color: cornflowerblue;
-    height: 50px;
+    background-color: #07203f;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: white;
+    padding: 15px;
+    border-bottom: 1px solid white;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    align-items: center;
+    width: 1500px;
 }
 
 .author-nickname {
@@ -28,11 +32,42 @@ header {
 
 .author-links {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     font-size: 20px;
 }
 
 .author-links a {
     text-decoration: none;
     color: white;
+}
+
+.author-links li {
+    list-style-type: none;
+}
+
+/* About me section */
+.about-me-block {
+    background-color: #07203f;
+}
+
+.about-me-wrapper {
+    margin: 0 auto;
+}
+
+.about-me-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+}
+
+.author-description h1 {
+    margin: 0;
+    font-size: 30px;
+    padding: 100px;
+}
+
+.author-picture img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
 }
