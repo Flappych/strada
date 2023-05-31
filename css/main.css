@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: center;
     color: white;
-    padding: 15px;
+    padding: 30px 15px;
     border-bottom: 1px solid white;
 }
 
@@ -27,7 +27,7 @@ header {
 
 .author-nickname {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .author-links {
@@ -39,6 +39,7 @@ header {
 .author-links a {
     text-decoration: none;
     color: white;
+    font-size: 40px;
 }
 
 .author-links li {
@@ -52,22 +53,48 @@ header {
 
 .about-me-wrapper {
     margin: 0 auto;
+    padding: 100px 0;
+}
+
+.author-description {
+    padding: 15px;
+}
+
+.author-description h1 {
+    margin: 0;
+    font-size: 64px;
+}
+
+.author-description p {
+    width: 600px;
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+
+.author-description button {
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 25px 50px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.author-description button:hover {
+    background-color: #d9aa90;
+}
+
+.author-picture img {
+    height: 767px;
+    width: 767px;
+    border-radius: 50%;
 }
 
 .about-me-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 1500px;
-}
-
-.author-description h1 {
-    margin: 0;
-    font-size: 30px;
-    padding: 100px;
-}
-
-.author-picture img {
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
 }
