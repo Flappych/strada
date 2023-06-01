@@ -5,6 +5,8 @@ body {
     padding: 0;
     margin: 0;
     color: white;
+    height: 2000px;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -46,14 +48,25 @@ header {
     list-style-type: none;
 }
 
+@media (max-width: 576px) {
+    .author-links {
+        flex-direction: column;
+    }
+}
+
 /* About me section */
-.about-me-block {
+
+.about-me-section {
     background-color: #07203f;
 }
 
 .about-me-wrapper {
     margin: 0 auto;
     padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+
+    width: 1500px;
 }
 
 .author-description {
@@ -61,6 +74,7 @@ header {
 }
 
 .author-description h1 {
+    padding-top: 150px;
     margin: 0;
     font-size: 64px;
 }
@@ -92,9 +106,100 @@ header {
     border-radius: 50%;
 }
 
-.about-me-wrapper {
+@media (max-width: 576px) {
+    .about-me-wrapper {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .author-picture img {
+        height: 230px;
+        width: 230px;
+        padding: 50px 180px;
+    }
+
+    .author-description h1 {
+        font-size: 32px;
+        line-height: 44px;
+        padding: 20px 125px;
+    }
+
+    .author-description p {
+        font-size: 24px;
+        line-height: 28px;
+        width: 400px;
+        padding: 0 100px;
+    }
+
+    .author-description button {
+        padding: 20px 30px;
+        margin: 0 75px;
+    }
+}
+
+/* Skills section */
+
+.skills-section {
+    background-color: #eaded4;
+}
+
+.skills-section h2 {
+    font-size: 72px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.skills-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 1500px;
+}
+
+.author-skills {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 250px;
+}
+
+.box {
+    font-size: 72px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-first {
+    background-color: #07203f;
+}
+
+.box-second {
+    background-color: #d9aa90;
+}
+
+.box-third {
+    background-color: #07203f;
+}
+
+@media (max-width: 576px) {
+    .author-skills {
+        flex-direction: column;
+    }
+
+    .skills-section h2 {
+        font-size: 36px;
+        padding: 50px;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+        font-size: 24px;
+    }
 }
