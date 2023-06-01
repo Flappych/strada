@@ -203,3 +203,38 @@ header {
         font-size: 24px;
     }
 }
+
+/* Progects section */
+.projects-section h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.projects-section {
+    background-color: #07203f;
+}
+
+.project-wrapper {
+}
+
+.project {
+    display: flex;
+    margin-top: 50px;
+}
+
+.project-photo img {
+    width: 700px;
+    height: 500px;
+}
+
+.project-description h3 {
+    font-size: 64px;
+}
+
+.project-description p {
+    font-size: 36px;
+}
