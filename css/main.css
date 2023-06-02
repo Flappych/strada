@@ -299,6 +299,10 @@ header {
         height: 260px;
     }
 
+    .project {
+        width: 390px;
+    }
+
     .project-photo {
         justify-content: center;
     }
