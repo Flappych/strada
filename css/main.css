@@ -5,8 +5,11 @@ body {
     padding: 0;
     margin: 0;
     color: white;
-    height: 4000px;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -42,6 +45,11 @@ header {
     text-decoration: none;
     color: white;
     font-size: 40px;
+    transition: color 0.5s;
+}
+
+.author-links a:hover {
+    color: #d9aa90;
 }
 
 .author-links li {
@@ -49,8 +57,16 @@ header {
 }
 
 @media (max-width: 576px) {
+    .author-nickname {
+        font-size: 24px;
+    }
+
     .author-links {
         flex-direction: column;
+    }
+
+    .author-links a {
+        font-size: 18px;
     }
 }
 
@@ -62,15 +78,17 @@ header {
 
 .about-me-wrapper {
     margin: 0 auto;
-    padding: 100px 0;
     display: flex;
     justify-content: space-between;
-
-    width: 1500px;
+    align-items: center;
+    padding: 100px;
+    gap: 30px;
 }
 
 .author-description {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .author-description h1 {
@@ -80,7 +98,7 @@ header {
 }
 
 .author-description p {
-    width: 600px;
+    text-align: center;
     font-size: 36px;
     margin-bottom: 100px;
 }
@@ -221,7 +239,6 @@ header {
     text-align: center;
     margin: 0;
     padding-top: 50px;
-
     font-size: 72px;
     font-weight: bold;
 }
@@ -231,14 +248,20 @@ header {
 }
 
 .projects-wrapper {
-    width: 1500px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .project {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 30px;
+    gap: 100px;
+    padding: 50px 0;
+}
+
+.project:last-child {
     padding-bottom: 100px;
 }
 
@@ -267,6 +290,10 @@ header {
 }
 
 @media (max-width: 576px) {
+    .projects-section h2 {
+        font-size: 32px;
+    }
+
     .project-photo img {
         width: 390px;
         height: 260px;
@@ -274,10 +301,6 @@ header {
 
     .project-photo {
         justify-content: center;
-    }
-
-    .projects-wrapper {
-        width: 576px;
     }
 
     .project-description h3 {
@@ -290,6 +313,8 @@ header {
 
     .project {
         flex-direction: column-reverse;
+        gap: 20px;
+        padding: 0 20px;
     }
 
     .project:nth-child(2) {
@@ -306,5 +331,118 @@ header {
         display: flex;
         width: 390px;
         justify-content: right;
+    }
+}
+
+/* Contacts section */
+
+.contacts-section {
+    background-color: #eaded4;
+}
+
+.contacts-section h2 {
+    margin: 0;
+    padding: 75px 0;
+    text-align: center;
+    font-size: 72px;
+    color: black;
+}
+
+.contacts-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 200px;
+}
+
+.contact-box {
+    width: 500px;
+    height: 500px;
+    font-size: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box button {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 100px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition: color 0.5;
+}
+
+.contact-box button:hover {
+    background-color: #d9aa90;
+}
+
+.contact-box:nth-child(even) button:hover {
+    background-color: #07203f;
+    color: white;
+}
+
+.contact-box button a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-box:nth-child(odd) {
+    background-color: #07203f;
+}
+
+.contact-box:nth-child(even) {
+    background-color: #d9aa90;
+}
+
+@media (max-width: 576px) {
+    .contacts-section-wrapper {
+        flex-direction: column;
+    }
+
+    .contacts-section h2 {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 800;
+    }
+
+    .contact-box {
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+
+    .contact-box button {
+        font-size: 11px;
+        padding: 10px 40px;
+    }
+}
+
+/* footer section */
+
+footer {
+    background-color: #07203f;
+    padding: 25px 15px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    width: 1500px;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .author-links a {
+        font-size: 18px;
     }
 }
