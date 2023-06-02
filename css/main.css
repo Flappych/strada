@@ -387,6 +387,11 @@ header {
     color: white;
 }
 
+.contact-box:nth-child(even) button a:hover {
+    background-color: #07203f;
+    color: white;
+}
+
 .contact-box button a {
     text-decoration: none;
     color: black;
